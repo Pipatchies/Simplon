@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(29, 27, 38);
+}
+.section1 {    
+    flex-direction: column;
+    color: beige;
+    background: url(image/Code.jpg);
+    background-size: cover;
+    opacity: 0.9;
+    padding : 200px;
+    font-family: 'Freeman' sans-serif;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+}
+
+.bulle {
+    width: 80px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+}
+
+.avatar_span {
+    display: flex;
+    justify-content: center;
+}
+
+.section1 h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.div_horizontale {
+    
+    display: flex;
+    list-style-type:none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.liste_verticale {
+    
+    display: flex;
+    list-style-type:none;
+    justify-content: center;
+    gap: 20px;
+}
+
+.liste_horizontale {
+    
+    display: flex;
+    list-style-type:none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.div_text {
+    font-size: 1.2em;
+}
