@@ -1,24 +1,37 @@
-body {
+main {
     background-color: rgb(29, 27, 38);
+    position: relative;
 }
 .section1 {    
     flex-direction: column;
-    color: beige;
-    background: url(image/Code.jpg);
+    color: whitesmoke;
+    padding : 180px;
+    position: relative;
+    z-index: 2;
+}
+
+.section1:before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;
+    background-image: url(image/Code.jpg);
     background-size: cover;
-    opacity: 0.9;
-    padding : 200px;
-    font-family: 'Freeman' sans-serif;
+    opacity: 0.25; 
 }
 
 .avatar {
     width: 200px;
     border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    position: relative;
+    z-index: 2;
 }
 
 .bulle {
     width: 80px;
     border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    position: relative;
+    z-index: 2;
 }
 
 .avatar_span {
@@ -26,37 +39,85 @@ body {
     justify-content: center;
 }
 
-.section1 h1 {
+.section1 h1, h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(221, 201, 181);
+    position: relative;
+    z-index: 2;
 }
 
 .div_horizontale {
-    
     display: flex;
     list-style-type:none;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-}
-
-.liste_verticale {
-    
-    display: flex;
-    list-style-type:none;
-    justify-content: center;
-    gap: 20px;
-}
-
-.liste_horizontale {
-    
-    display: flex;
-    list-style-type:none;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .div_text {
     font-size: 1.2em;
+    font-family:'Arial', sans-serif;
+}
+
+.section1 h2 {
+    font-size: 1.35em;
+    border: 3px solid;
+    background-color: rgba(221, 201, 181, 0.3);
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+}
+.liste_raisons {
+    display: grid;
+    grid-template-columns: 230px 230px 230px;
+    justify-content: center;
+    list-style-type: none;
+    gap: 40px;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+
+.liste_text {
+    font-family:'Arial', sans-serif;
+    font-size: 0.9em;
+}
+
+.liste_text:before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url(image/pouce.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left:-25px;
+    margin-right: 5px;
+}
+
+strong {
+    color: rgb(221, 201, 181)
+}
+
+.liste_logo {
+    display: flex;
+    list-style-type:none;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.img_logo:hover {
+    opacity: 0.5;
+}
+
+footer {
+    font-size: 0.8em;
+    text-align: center;
 }
