@@ -68,6 +68,8 @@ main {
     border: 3px solid;
     background-color: rgba(221, 201, 181, 0.3);
     padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
     position: relative;
     z-index: 2;
 }
